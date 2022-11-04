@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>    
+    <title>Элементы типа email, url, tel</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Контактная информация</legend>
+            <p>
+                <!--
+                    email - браузер проводит валидацию корректности введенего email адреса.
+                -->
+                <label>
+                    <input type="email" name="email" title="Формат данных не правильный. Только в Chrome" />
+                </label>
+            </p>
+            <p>
+                <!-- 
+                    url - браузер проводит валидацию корректности введеного адреса.
+                -->
+            <label>
+                Сайт
+                <input type="url" name="website" title="Абсолютный URL. Обязательно с протоколом HTTP. Пример
+                hhtp://html5readlines.com/" /></label>
+            </p>
+            <p>
+                <!--
+                    tel - мобильный браузер будет отображать экранную клавиатуру с цифрами
+                -->
+            <label>
+                Телефон
+                <input type="tel" name="phone"></label>
+            </p>
+        </fieldset>
+        <br>
+        <p>
+            <input type="submit" value="Отправить" />
+        </p>
+    </form>
+</body>
+</html>
